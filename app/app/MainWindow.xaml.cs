@@ -20,5 +20,14 @@ namespace app
         {
             InitializeComponent();
         }
+
+        private void x1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                result.Text = (int.Parse(x1.Text) * int.Parse(x2.Text)).ToString();
+            }
+            catch { }
+        }
     }
 }

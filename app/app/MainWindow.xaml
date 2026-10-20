@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize="16">
     <Grid>
-
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBox x:Name="x1" Width="50" TextChanged="x1_TextChanged"/>
+            <TextBlock Text="*"/>
+            <TextBox x:Name="x2" Width="50" TextChanged="x1_TextChanged"/>
+            <TextBlock Text="="/>
+            <TextBox x:Name="result" Width="50"/>
+        </StackPanel>
     </Grid>
 </Window>
